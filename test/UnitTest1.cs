@@ -53,4 +53,18 @@ public class UnitTest1
         Assert.Equal(0, numberOfDeadNeighbors);
         Assert.Equal(0, numberOfAliveNeighbors);
     }
+    
+    [Fact]
+    public void Universe_5by5_has_one_alive_cell_at_x0_y0_and_it_has_three_dead_and_zero_alive_neighbors()
+    {
+        var universeFiveByFive = new Universe(5, 5);
+        
+        universeFiveByFive.GiveLifeTo(0,0);
+        
+        (int numberOfDeadNeighbors, int numberOfAliveNeighbors) 
+            = universeFiveByFive.GetNumberOfDeadAndAliveNeighborsOf(0, 0);
+        
+        Assert.Equal(3, numberOfDeadNeighbors);
+        Assert.Equal(0, numberOfAliveNeighbors);
+    }
 }

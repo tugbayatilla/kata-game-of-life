@@ -12,4 +12,17 @@
 - https://github.com/small-coding-dojo/smcd-csharp-game-of-life/blob/main/Readme.md
 - [https://playgameoflife.com/](https://playgameoflife.com/)
 - [https://kata-log.rocks/game-of-life-kata](https://kata-log.rocks/game-of-life-kata)
-- [https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) 
+- [https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+
+## Design Decisions
+
+- Upper left corner is the 0,0
+- y is the vertical axis
+- x is the horizontal axis
+
+```
+x- y-	 y-	    x+ y-
+x-	    CELL	x+
+x- y+	 y+	    x+ y+
+```
