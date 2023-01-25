@@ -16,5 +16,13 @@ public class UnitTest1
         Assert.Equal(2, universe.Dimensions.Rank);
     }
     
+    [Fact]
+    public void Universe_has_dimensions_are_one_by_one()
+    {
+        var universe = new Universe(1,1);
+        Assert.Equal(1, universe.Dimensions.GetLength(0));
+        Assert.Equal(1, universe.Dimensions.GetLength(1));
+    }
+    
     
 }
