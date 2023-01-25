@@ -8,4 +8,9 @@ public class Universe
     }
 
     public int[,] Dimensions { get; }
+
+    public void GiveLifeTo(int x, int y)
+    {
+        Dimensions[x, y] = 1;
+    }
 }
