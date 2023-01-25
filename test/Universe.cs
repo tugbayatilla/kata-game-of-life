@@ -21,4 +21,9 @@ public class Universe
     {
         Dimensions[x, y] = Dead;
     }
+
+    public (int numberOfDeadNeighbors, int numberOfAliveNeighbors) GetNumberOfDeadAndAliveNeighborsOf(int x, int y)
+    {
+        return (0, 0);
+    }
 }

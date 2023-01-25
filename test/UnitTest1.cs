@@ -43,4 +43,14 @@ public class UnitTest1
         _universeOneByOne.TakeLifeFrom(0, 0);
         Assert.Equal(Universe.Dead, _universeOneByOne.Dimensions[0, 0]);
     }
+    
+    [Fact]
+    public void Universe_knows_the_number_of_dead_and_alive_neighbors_of_a_cell()
+    {
+        (int numberOfDeadNeighbors, int numberOfAliveNeighbors) 
+            = _universeOneByOne.GetNumberOfDeadAndAliveNeighborsOf(0, 0);
+        
+        Assert.Equal(0, numberOfDeadNeighbors);
+        Assert.Equal(0, numberOfAliveNeighbors);
+    }
 }
