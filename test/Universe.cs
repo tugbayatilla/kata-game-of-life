@@ -16,4 +16,9 @@ public class Universe
     {
         Dimensions[x, y] = Alive;
     }
+
+    public void TakeLifeFrom(int x, int y)
+    {
+        Dimensions[x, y] = Dead;
+    }
 }

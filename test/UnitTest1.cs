@@ -35,4 +35,12 @@ public class UnitTest1
         _universeOneByOne.GiveLifeTo(0, 0);
         Assert.Equal(Universe.Alive, _universeOneByOne.Dimensions[0,0]);
     }
+    
+    [Fact]
+    public void Universe_can_take_life_from_a_cell()
+    {
+        _universeOneByOne.GiveLifeTo(0, 0);
+        _universeOneByOne.TakeLifeFrom(0, 0);
+        Assert.Equal(Universe.Dead, _universeOneByOne.Dimensions[0,0]);
+    }
 }
