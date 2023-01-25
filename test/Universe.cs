@@ -2,6 +2,9 @@ namespace kata_game_of_life_tests;
 
 public class Universe
 {
+    public const int Alive = 1;
+    public const int Dead = 0;
+
     public Universe(int x, int y)
     {
         Dimensions = new int[x, y];
@@ -11,6 +14,6 @@ public class Universe
 
     public void GiveLifeTo(int x, int y)
     {
-        Dimensions[x, y] = 1;
+        Dimensions[x, y] = Alive;
     }
 }
